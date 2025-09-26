@@ -41,11 +41,17 @@ The project includes clear mapping of how different source files relate within t
 Run `Init_SalesDataWarehouse.sql` to create the data warehouse and schemas.
 
 ### 2. Create Tables and Views
-Run DDL scripts for Bronze, Silver, and Gold layers **in order**:
+Run the DDL scripts in order:
+```sql
+-- Create Bronze layer tables
 ddl_bronze_layer.sql
-ddl_silver_layer.sql
-ddl_gold_layer.sql
 
+-- Create Silver layer tables
+ddl_silver_layer.sql
+
+-- Create Gold layer views
+ddl_gold_layer.sql
+```
 
 ### 3. ETL Process
 - Load data into Bronze tables using `procedure_bronze_layer.sql`.  
