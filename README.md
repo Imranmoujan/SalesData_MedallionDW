@@ -42,4 +42,30 @@ Run `Init_SalesDataWarehouse.sql` to create the data warehouse and schemas.
 
 ### 2. Create Tables and Views
 Run DDL scripts for Bronze, Silver, and Gold layers **in order**:
+ddl_bronze_layer.sql
+ddl_silver_layer.sql
+ddl_gold_layer.sql
+
+
+### 3. ETL Process
+- Load data into Bronze tables using `procedure_bronze_layer.sql`.  
+- Transform and load data into Silver tables using `procedure_silver_layer.sql`.
+
+### 4. Analytics
+Query **Gold layer views** for business reporting and analytics.
+
+---
+
+## Key Features
+
+- **Modular, layered architecture** for clean separation of concerns.  
+- **Data quality improvements** through standardized transformations.  
+- **Business-ready analytics** with star schema and aggregated tables in the Gold layer.  
+
+---
+
+## License
+
+This project is for **educational and demonstration purposes**.
+
 
