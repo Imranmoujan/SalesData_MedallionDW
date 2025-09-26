@@ -35,6 +35,14 @@ The project includes clear mapping of how different source files relate within t
 
 ---
 
+## Tools / Technologies Used
+
+- **SQL Server** – Database engine for creating tables, views, and ETL procedures  
+- **SQL Server Management Studio (SSMS)** – For development, scripting, and query execution  
+- **Draw.io** – For creating diagrams and visualizing data architecture
+
+---
+
 ## How to Use
 
 ### 1. Initialize the Database
