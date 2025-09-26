@@ -14,7 +14,7 @@ The solution is structured using the **industry-standard Medallion Architecture*
 - **Silver Layer:** Cleansing, normalization, standardization, and enrichment of data.  
 - **Gold Layer:** Business views, aggregations, and star schema models for analytics.
 
-![Data Warehouse Architecture](Doc/Data Warehouse  Architecture.png)
+![Data Warehouse Architecture](Doc/Data_Warehouse_Architecture.png)
 
 The project includes clear mapping of how different source files relate within the Bronze layer:
 
