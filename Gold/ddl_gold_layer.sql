@@ -61,7 +61,6 @@ GO
 CREATE OR ALTER VIEW gold.dim_products AS 
 
 	SELECT 
-		ROW_NUMBER() OVER(ORDER BY cpi.prd_key) AS product_number,
 		cpi.prd_id AS product_id, 
 		cpi.prd_key AS product_key,
 		cpi.cat_id AS category_id ,
