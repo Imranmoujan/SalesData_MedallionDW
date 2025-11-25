@@ -61,7 +61,7 @@ ddl_silver_layer.sql
 ddl_gold_layer.sql
 ```
 
-### 3. ETL Process
+### 3. ELT Process
 - Load data into Bronze tables using `procedure_bronze_layer.sql`.  
 - Transform and load data into Silver tables using `procedure_silver_layer.sql`.
 
