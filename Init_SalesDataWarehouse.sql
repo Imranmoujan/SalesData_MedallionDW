@@ -21,7 +21,12 @@
 	GO
 
 	--Drop and recreate the database 
-	DROP DATABASE IF EXISTS SalesDataWarehouse;
+	IF EXISTS(SELECT 1 FROM sys.databases WHERE NAME = 'SalesDataWarehouse')
+	
+	BEGIN 
+		ALTER DATABASE SalesDataWarehouse SET SINGLE_USER WITH ROLLBACK IMMEDIATE;
+		DROP DATABASE SalesDataWarehouse;
+	END
 
 	GO
 
